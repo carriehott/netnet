@@ -1,0 +1,73 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 100%;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}   
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    background-color: #fef8fa;
+    color: #333;
+}
+
+#title {
+    text-align: center;
+    color: #e60c3f;
+    width: 50%; 
+    height: 100vh; 
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    border-right: #e60c3f 1px solid;
+}
+
+#title h1 {
+        font-size: 5rem;
+text-align: center;
+margin-top: 50%; 
+width: 20%;
+}
+
+#content {
+    margin-left: 50%;
+    padding: 2rem;
+    width: 50%;
+}
+#content p {
+    color: #e60c3f;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+a {
+    color: #e60c3f;
+    text-decoration: underline;
+}
+
+#net {
+    position: absolute;
+    width: 100px;
+    animation: netmap-x 10s linear infinite alternate, netmap-y 10s linear infinite alternate;  
+}
+
+#net img {
+      width: 20%; 
+}
+
+@keyframes netmap-x {
+ from { left: 0px; }
+  to   { left: calc(95% - 28px); }
+}
+
+@keyframes netmap-y {
+  from { top: 0px; }
+  to   { top: calc(95% - 28px); }
+}
