@@ -71,3 +71,25 @@ a {
   from { top: 0px; }
   to   { top: calc(95% - 28px); }
 }
+
+@media (max-width: 768px) {
+    #title {
+        position: static;
+        width: 100%;
+        height: auto;
+        border-right: none;
+        border-bottom: #e60c3f 1px solid;
+        padding: 2rem;
+    }
+
+    #title h1 {
+        font-size: 3rem;
+        margin-top: 1rem;
+        width: 100%;
+    }
+
+    #content {
+        margin-left: 0;
+        width: 100%;
+    }
+}
