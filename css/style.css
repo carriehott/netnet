@@ -17,35 +17,87 @@ body {
     color: #333;
 }
 
+main {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100%;
+}
+
+#images {
+    padding-top: 15%; 
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#radioimages {
+    padding-top: 10%; 
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-right: #e60c3f 1px solid;
+      overflow-y: auto;
+}
+    
+
+.radioimg {
+    width: 85%;
+    margin: 1rem 0;
+}
+
+h2  {
+    color: #e60c3f;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+#content {
+    padding: 2rem;
+    width: 50%;
+    height: 100vh; 
+    overflow-y: auto;
+    border-left: #e60c3f 1px solid;
+}
+
+#content p {
+    color: #e60c3f;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
 #title {
     text-align: center;
     color: #e60c3f;
     width: 50%; 
     height: 100vh; 
     position: fixed;
-    top: 0; 
-    left: 0; 
-    border-right: #e60c3f 1px solid;
+    z-index: -5; 
 }
 
-#title h1 {
-        font-size: 5rem;
-text-align: center;
-margin-top: 50%; 
-width: 20%;
-}
-
-#content {
-    margin-left: 50%;
-    padding: 2rem;
-    width: 50%;
-}
-#content p {
+#name {
     color: #e60c3f;
-    font-size: 1.2rem;
-    line-height: 1.6;
-    margin-bottom: 1.5rem;
-}
+    font-size: 3rem;
+    position: fixed; 
+    top: 10px; 
+    left: 25px; 
+    width: 50%;
+    z-index: 1000;
+    }
+
+ #radioimg:hover {
+    border: 1px solid #e60c3f;
+ } 
+
+
 
 a {
     color: #e60c3f;
@@ -60,6 +112,11 @@ a {
 
 #net img {
       width: 20%; 
+}
+
+p .small {
+    font-size: 0.5rem;
+    color: #e60c3f;
 }
 
 @keyframes netmap-x {
