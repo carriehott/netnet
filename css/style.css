@@ -25,14 +25,11 @@ main {
 }
 
 #images {
-    padding-top: 15%; 
+   margin-top: 15%;
+   margin-left: 10%;
+   padding: 1%; 
     width: 50%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
+
 }
 
 #radioimages {
@@ -51,6 +48,15 @@ main {
 .radioimg {
     width: 85%;
     margin: 1rem 0;
+}
+
+#cartimg {
+    max-width: 100%;
+    margin: 1rem 0;
+}
+
+#cartimg:hover {
+    opacity: 0.5; 
 }
 
 h2  {
@@ -87,16 +93,6 @@ h2  {
     z-index: -5; 
 }
 
-#name {
-    color: #e60c3f;
-    font-size: 3rem;
-    position: fixed; 
-    top: 10px; 
-    left: 25px; 
-    width: 50%;
-    z-index: 1000;
-    }
-
  #radioimg:hover {
     border: 1px solid #e60c3f;
  } 
@@ -114,6 +110,18 @@ a {
     animation: netmap-x 10s linear infinite alternate, netmap-y 10s linear infinite alternate;  
 }
 
+#name {
+    color: #e60c3f;
+    font-size: 3rem;
+    position: fixed; 
+    top: 10px; 
+    left: 25px; 
+    width: 50%;
+    z-index: 1000;
+    text-decoration: none;
+    }
+
+    
 #net img {
       width: 20%; 
 }
@@ -140,13 +148,16 @@ p .small {
         height: auto;
         border-right: none;
         padding: 2rem;
+        text-decoration: none;
     }
 
     #title h1, #name h1 {
         font-size: 5rem;
         margin-top: 1rem;
         width: 100%;
+        text-decoration: none;
     }
+
 
     #mobile_description {
         display: block;
@@ -175,5 +186,7 @@ p .small {
         margin-left: 0;
         width: 100%;
         border-left: none;
+        border-top: #e60c3f 1px solid;
+        padding: 2rem;
     }
 }
