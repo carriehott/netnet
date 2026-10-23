@@ -59,6 +59,10 @@ h2  {
     margin-top: 1rem;
 }
 
+#mobile_description {
+    display: none;
+}
+
 #content {
     padding: 2rem;
     width: 50%;
@@ -130,23 +134,46 @@ p .small {
 }
 
 @media (max-width: 768px) {
-    #title {
+    #title, #name {
         position: static;
         width: 100%;
         height: auto;
         border-right: none;
-        border-bottom: #e60c3f 1px solid;
         padding: 2rem;
     }
 
-    #title h1 {
+    #title h1, #name h1 {
         font-size: 5rem;
         margin-top: 1rem;
         width: 100%;
     }
 
+    #mobile_description {
+        display: block;
+        position: static;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        width: 100%;
+        height: auto;
+        border-right: none;
+          color: #e60c3f;
+    }
+
+    main {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #radioimages {
+        width: 100%;
+        height: auto;
+        border-right: none;
+        border-bottom: #e60c3f 1px solid;
+    }
+
     #content {
         margin-left: 0;
         width: 100%;
+        border-left: none;
     }
 }
